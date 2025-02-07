@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>hello oceana</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"> -->
+  <script>
+    function handleSelection(option) {
+      // alert(`You selected: ${option}!`);
+      // Save the selected option (could be extended to save on a server)
+      answers.push(option);
+      // console.log(answers);
+      document.getElementById("center-container3").style.display = "none";
+      document.getElementById("center-container4").style.display = "block";
+
+    }
+
+    function handleSelection2(option) {
+      // alert(`You selected: ${option}!`);
+      // Save the selected option (could be extended to save on a server)
+      answers.push(option);
+      // console.log(answers);
+      document.getElementById("center-container4").style.display = "none";
+      document.getElementById("center-container5").style.display = "block";
+
+      setTimeout(() => {
+        document.getElementById("text11").classList.remove("hide");
+      }, 2000);
+
+      setTimeout(() => {
+        document.getElementById("text12").classList.remove("hide");
+      }, 2500);
+
+      setTimeout(() => {
+        document.getElementById("text10").textContent = "Dinner details: ";
+        document.getElementById("text11").classList.add("hide");
+        document.getElementById("text12").classList.add("hide");
+
+      }, 4000);
+
+      setTimeout(() => {
+        document.getElementById("text11").textContent = "Barcelona Wine Bar";
+        document.getElementById("text11").classList.remove("hide");
+
+      }, 5500);
+
+      setTimeout(() => {
+        document.getElementById("text12").textContent = "5:15 PM";
+        document.getElementById("text12").classList.remove("hide");
+
+      }, 6500);
+
+      setTimeout(() => {
+        document.getElementById("text13").textContent = "Rides to and from dinner shall be provided.";
+        document.getElementById("text13").classList.remove("hide");
+
+      }, 7500);
+
+      setTimeout(() => {
+        document.getElementById("text10").textContent = "I love you baby";
+        document.getElementById("text11").classList.add("hide");
+        document.getElementById("text12").classList.add("hide");
+        document.getElementById("text13").classList.add("hide");
+      }, 10000);
+
+      setTimeout(() => {
+        document.getElementById("text11").textContent = "See you soon";
+        document.getElementById("text11").classList.remove("hide");
+        
+      }, 12000);
+
+      setTimeout(() => {
+        document.getElementById("text11").classList.add("hide");
+        document.getElementById("text10").classList.add("hide");
+        
+        
+      }, 14000);
+
+      setTimeout(() => {
+        document.getElementById("flower").classList.remove("hide");
+        
+      }, 16000);
+
+    }
+  </script>
+  </head>
+  <body>
+    <!-- <img src="assets/date.png" alt="date?" class="header-img" id="header-img" /> -->
+    <p id="text" class="text first-text">Hi Oceana, I have a question...</p>
+
+    <div class="container" id="container">
+
+      <p id="text" class="text hide second-text">Do you wanna be my valentine?</p>
+    
+      <img src="assets/cat.gif" alt="kiss" class="image-2 hide" />
+      <img src="assets/erm-fingers.gif" alt="please" class="image-1 hide" />
+      <img src="assets/oh-yay.gif" alt="yes" class="image-3 hide" />
+      <img src="assets/oh-yay.gif" alt="yes" class="image-4 hide" />
+
+      <div class="center-container" id="center-container">
+        <p id="text" class="text">First, do you happen to be...<br>free on the 14th?</p>
+        <img src="assets/tom.gif" alt="tom" class="image-5 hide" />
+        <button class="btn btn-yes2 hide">Yes</button>
+        <button class="btn btn-no2 hide">No</button>
+      </div>
+
+      <div class="center-container" id="center-container2">
+        <p id="text3" class="text">Good answer.</p>
+        <img src="assets/duck.gif" alt="duck" class="image-6 hide" />
+      </div>
+
+      <div class="center-container fit" id="center-container3">
+        <p id="text4" class="text">We've got some decisions to make...<br>First, what fits we rockin?</p>
+
+        <div>      
+          <div class="cursor-pointer-1 text-center hide" onclick="handleSelection('black-denim')">
+            <img class="rounded-lg mb-2 w-full h-40 object-cover" src="assets/rockstar.gif" alt="black-denim">
+            <p class="font-semibold">Black & Denim</p>
+          </div>
+      
+          <div class="cursor-pointer-2 text-center hide" onclick="handleSelection('all-black')">
+            <img class="rounded-lg mb-2 w-full h-40 object-cover" src="assets/indian.gif" alt="all-black">
+            <p class="font-semibold">All-Black</p>
+          </div>
+      
+          <div class="cursor-pointer-3 text-center hide" onclick="handleSelection('semiformal')">
+            <img class="rounded-lg mb-2 w-full h-40 object-cover" src="assets/theoffice.gif" alt="semiformal">
+            <p class="font-semibold">Semiformal</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="center-container fit" id="center-container4">
+        <p id="text5" class="text hide">Bet. <br>What should we do together?</p>
+
+        <div>      
+          <div class="cursor-pointer text-center" onclick="handleSelection2('picnic')">
+            <img class="rounded-lg mb-2 w-full h-40 object-cover2" src="assets/picnic.jpg" alt="picnic">
+            <p class="font-semibold">Picnic</p>
+          </div>
+      
+          <div class="cursor-pointer text-center" onclick="handleSelection2('aquarium')">
+            <img class="rounded-lg mb-2 w-full h-40 object-cover2" src="assets/aquarium.webp" alt="aquarium">
+            <p class="font-semibold">Aquarium</p>
+          </div>
+      
+          <div class="cursor-pointer text-center" onclick="handleSelection2('pottery')">
+            <img class="rounded-lg mb-2 w-full h-40 object-cover2" src="assets/pottery.jpg" alt="pottery">
+            <p class="font-semibold">Pottery class</p>
+          </div>
+          <div class="cursor-pointer text-center" onclick="handleSelection2('shooting')">
+            <img class="rounded-lg mb-2 w-full h-40 object-cover2" src="assets/shooting.jpg" alt="shooting">
+            <p class="font-semibold">Shooting Range</p>
+          </div>
+          <div class="cursor-pointer text-center" onclick="handleSelection2('pottery')">
+            <img class="rounded-lg mb-2 w-full h-40 object-cover2" src="assets/heist.jpg" alt="pottery">
+            <p class="font-semibold">Bank Heist</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="center-container" id="center-container5">
+        <p id="text10" class="text">Perfect choices my love. Your date appointment is set for:</p>
+        <p id="text11" class="text hide">Modera Old Ivy, Unit 417</p>
+        <p id="text12" class="text-2 hide">February 14 @ 10:00 AM</p>
+        <p id="text13" class="text-2 space hide"></p>
+        <img id="flower" class="flower hide" src = assets/flower.gif>
+
+
+      </div>
+
+      
+      <button class="btn btn-yes">Yes</button>
+      <button class="btn btn-no">No</button>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
